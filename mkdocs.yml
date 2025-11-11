@@ -1,0 +1,73 @@
+site_name: Procedural Planet Generation
+site_url: https://parallelcascades.com/procedural-planet-generation
+
+nav:
+  - Home: index.md
+  - Get Started: get-started.md
+  - Baking Textures from Procedural Materials: baking-textures.md
+  - Asteroid Rings: asteroid-rings.md
+  - Post Processing Glow: post-processing-glow.md
+  - Custom Space Lighting: custom-space-lighting.md
+  - Filtering: filtering.md
+  - Changelog: changelog.md
+
+theme:
+  name: material
+  logo: assets/logo.png
+  palette: 
+
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.footer
+
+extra:
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://parallelcascades.com
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@ParallelCascades
+    - icon: fontawesome/brands/github
+      link: https://github.com/parallel-cascades
+
+  analytics:
+    provider: google
+    property: G-DS7NFYR412
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWWTI46hhZVBa15iLBufyvz86BmhnpYWIxndzd0FLSFaMyjQ/viewform?usp=sharing&ouid=114066470228513694462" target="_blank" rel="noopener">feedback form</a>.
+
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of the documentation and whether users
+      find what they're searching for. With your consent, you're helping to
+      make this documentation better.
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+  - footnotes
+
