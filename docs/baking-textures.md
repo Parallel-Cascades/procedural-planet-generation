@@ -6,7 +6,7 @@ To balance performance and memory, we have included editor tools for baking proc
 
 ## Material context menu item
 
-One way to access the procedural texture baking is by right clicking on the material's inpector window and choosing 'Parallel Cascades > Bake Procedural Material to Cubemap Texture':
+You can bake the procedural planet's color map or its heightmap, which is used to generate normals. To access the procedural texture baking is by right clicking on the material's inpector window and choosing 'Parallel Cascades > Bake Procedural Material to Cubemap Texture' or 'Parallel Cascades > Bake Procedural Material Heightmap to Cubemap Texture:
 
 ![Bake Texture Context Menu](./assets/images/texture-baking/context-menu.png)
 
@@ -20,8 +20,6 @@ If you tick the `Assign Texture To Material` checkbox, the static texture will b
 
 ![Render Mode Property](./assets/images/texture-baking/render-mode-property.png)
 
-
-
 ## Flowmaps
 
 Stars and gas giants can utilise flow maps when in static texture rendering mode, in order to simulate the dynamic flow of the procedural shader. There are a few default flow map texture included in this asset, but you can also create your own with external tools like Photoshop or Flowmap Painter.
@@ -33,3 +31,11 @@ Stars and gas giants can utilise flow maps when in static texture rendering mode
 When importing these textures in Unity, make sure they are not imported as sRGB textures, as that will read the flow data incorrectly:
 
 ![Import Settings](./assets/images/texture-baking/flowmap-import-settings.png)
+
+## Be wary of Texture Sizes
+
+Baking large 4K cubemap face textures will actually create 4x4 = 16K sized textures:
+
+![4K Texture Preview](./assets/images/texture-baking/4k-texture-size.png)
+
+ Be mindful when creating multiple of these as your project can quickly balloon in size.

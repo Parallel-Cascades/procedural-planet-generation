@@ -8,7 +8,9 @@ nav:
   - Asteroid Rings: asteroid-rings.md
   - Post Processing Glow: post-processing-glow.md
   - Custom Space Lighting: custom-space-lighting.md
-  - Filtering: filtering.md
+  - Camera Antialiasing: antialiasing.md
+  - Shader Filtering: filtering.md
+  - Known Issues: known-issues.md
   - Changelog: changelog.md
 
 theme:
