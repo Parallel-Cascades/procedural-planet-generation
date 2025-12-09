@@ -25,8 +25,6 @@ Rocky planets with procedurally generated surface color and heightmap detail. Tw
 | **Ridges** | Scale, density, width, mask noise scale, gain determines if crevices or ridges |
 | **Normal Map Generation** | Global strength, granular multiplier for surface, ridge, craters |
 
-[View Moon Documentation →](./moons.md)
-
 ## Earth-likes
 
 ![Earth-like](./assets/images/earth-like.png)

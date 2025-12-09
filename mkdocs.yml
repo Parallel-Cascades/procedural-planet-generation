@@ -6,6 +6,7 @@ nav:
   - Get Started: get-started.md
   - Baking Textures from Procedural Materials: baking-textures.md
   - Asteroid Rings: asteroid-rings.md
+  - VFX Skybox: vfx-skybox.md
   - Post Processing Glow: post-processing-glow.md
   - Custom Space Lighting: custom-space-lighting.md
   - Camera Antialiasing: antialiasing.md
@@ -73,3 +74,11 @@ markdown_extensions:
   - pymdownx.blocks.caption
   - footnotes
 
+plugins:
+  - to-pdf:
+      enabled_if_env: ENABLE_PDF_EXPORT
+      cover_title: Procedural Planet Generation
+      author: Parallel Cascades
+      cover_subtitle: Documentation
+      copyright: Copyright © 2025
+   
