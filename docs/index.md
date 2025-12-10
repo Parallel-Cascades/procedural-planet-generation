@@ -6,7 +6,7 @@ Procedural Planet Generation is a Unity framework for creating procedural celest
 
 Built with Shader Graph, VFX Graph, and Render Graph, this framework creates beautiful and detailed, lightweight, non-landable planets optimized for viewing from space. This is NOT a terrain generation tool - it focuses on procedural surface textures and visual effects rather than geometric terrain or heightmaps. It's perfect for space strategy games, solar system maps, background environments, and skyboxes.
 
-[Get Started](./get-started.md){ .md-button .md-button--primary }
+[Get Started](./get-started.md){ .md-button .md-button--primary } [Try Demo](https://parallel-cascades.itch.io/procedural-planet-generation-demo){ .md-button .md-button--secondary } [Asset Store](https://assetstore.unity.com/packages/vfx/shaders/procedural-planet-generation-339842){ .md-button } 
 
 # Celestial Bodies
 
