@@ -31,9 +31,6 @@ For consistent and comfortable **4K gameplay**, **RTX 3080–class GPUs or highe
 
 ### Performance Test Steps
 
-#### ⚠ Important: Test in Build First
-Build performance is significantly better than in-Editor performance. If you're experiencing performance issues, always test in a build before attempting optimizations. Many perceived performance problems only exist in the editor environment.
-
 - Isolate object you're having performance issues with so that it's the only object you're viewing with the camera.
 - Monitor FPS and GPU utilization when viewing at various distance (the distances you'll be viewing it at in your game)
 - Compare editor performance vs build performance vs the expected benchmarked performance above.
