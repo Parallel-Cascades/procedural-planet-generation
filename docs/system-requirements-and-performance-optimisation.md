@@ -31,8 +31,21 @@ For consistent and comfortable **4K gameplay**, **RTX 3080–class GPUs or highe
 
 ### Performance Test Steps
 
+#### ⚠ Important: Unity Editor has a noticeable performance impact
+Performance in-Editor is worse when you have a procedural body selected and its inspector in focus:
+
+![Selected Inspector Performance](./assets/images/performance/selected-inspector-performance.png)
+
+And when you deselect your body:
+
+![Deselected Inspector Performance](./assets/images/performance/deselected-inspector-performance.png)
+
+So if you're experiencing performance issues, make sure your procedural body is deselected. Also, it's always a good idea to test in builds, where any possible editor performance impact is eliminated. Maximizing the game view (but not having it as a standalone popped-out tab) also has better performance than viewing it as a docked tab.
+
+Further testing steps:
+
 - Isolate object you're having performance issues with so that it's the only object you're viewing with the camera.
-- Monitor FPS and GPU utilization when viewing at various distance (the distances you'll be viewing it at in your game)
+- Monitor FPS and GPU utilization when viewing at various distance (the distances you'll be viewing it at in your game).
 - Compare editor performance vs build performance vs the expected benchmarked performance above.
 
 ## Utilise Texture baking when performance is critical (Paid version only)
