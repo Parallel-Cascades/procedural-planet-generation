@@ -11,9 +11,10 @@ nav:
   - Custom Space Lighting: custom-space-lighting.md
   - Camera Antialiasing: antialiasing.md
   - Shader Filtering: filtering.md
-  - System Requirements and Performance Optimisation: system-requirements-and-performance-optimisation
+  - System Requirements and Performance Optimisation: system-requirements-and-performance-optimisation.md
   - Known Issues: known-issues.md
   - Lite Samples Pack: lite-samples-pack.md
+  - Tutorials: tutorials.md
   - Changelog: changelog.md
 
 theme:
@@ -43,6 +44,8 @@ extra:
       link: https://www.youtube.com/@ParallelCascades
     - icon: fontawesome/brands/github
       link: https://github.com/parallel-cascades
+    - icon: fontawesome/solid/mug-hot
+      link: https://ko-fi.com/parallelcascades
 
   analytics:
     provider: google
