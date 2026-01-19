@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-01-19
+New Gas Giants and Asteroid Rings, Custom lighting improvements, Orthographic camera support
+
+### Added
+- New Gas Giants - better looking with explicit vertical bands and much improved performance. Procedural smoothness.
+- New Asteroid Rings - clearer ring bands separation and visual control over transparency. Procedural smoothness.
+- Orthographic camera support for planet and corona glow.
+- Smoothness and smoothness baking to moon shader.
+- Improved custom lighting with multiple shadow casters support.
+- Bake and Apply All Procedural Material Textures context menu
+- New custom lighting shadow system that supports multiple planetary shadow casters.
+
+### Fixed
+- Gas Giants and Stars could not bake their procedural textures
+
+### Changed
+- Asteroid rings are now called "Gas Giant Rings" to avoid confusion with asteroid belts.
+
 ## [1.0.4] - 2026-01-08
 Quick Fixes
 

@@ -5,12 +5,13 @@ nav:
   - Home: index.md
   - Get Started: get-started.md
   - Baking Textures from Procedural Materials: baking-textures.md
-  - Asteroid Rings: asteroid-rings.md
+  - Gas Giant Rings: gas-giant-rings.md
   - VFX Skybox: vfx-skybox.md
   - Post Processing Glow: post-processing-glow.md
   - Custom Space Lighting: custom-space-lighting.md
   - Camera Antialiasing: antialiasing.md
   - Shader Filtering: filtering.md
+  - Orthographic Camera: orthographic-camera.md
   - System Requirements and Performance Optimisation: system-requirements-and-performance-optimisation.md
   - Known Issues: known-issues.md
   - Lite Samples Pack: lite-samples-pack.md
@@ -19,6 +20,7 @@ nav:
 
 theme:
   name: material
+  custom_dir: overrides
   logo: assets/logo.png
   palette: 
 

@@ -1,10 +1,8 @@
-# Procedural Asteroid Rings
+# Procedural Gas Giant Rings
 
-![Asteroid Ring](./assets/images/asteroid-rings/pink-ring.png)
+![Gas Giant Ring](./assets/images/asteroid-rings/pink-ring.png)
 
-Inner and Outer Radius control the shape of the asteroid ring.
-
-The patterns in asteroid rings are built by sampling a detail noise texture assigned by default to each Procedural Asteroid Shader.Advanced users can plug their own textures here to get different patterns.
+Inner and Outer Radius control the shape of the ring.
 
 ## Lighting Override
 You can adjust properties to control the way light interacts with the object.
@@ -14,8 +12,6 @@ You can adjust properties to control the way light interacts with the object.
 - LightFalloffSharpness is a value that sits at a default of 0 for a Lit object, and increasing it makes the transition from light to dark when the directional light changes rotation sharper.
 - MinBrightnessLevel determines how dark the ring gets when the light faces away from it.
 - MinShadowBrightnessLevel determines how dark the ring gets when it is in the shadow of another object.
-- The final two toggles are multi-compile boolean keywords necessary for the shader to receive shadows - they can be turned off to improve performance if shadows are not necessary.
-
 
 ### Two Sided Lighting
 Consider the following situation with the light hitting the asteroid ring on the opposite side of the viewer:

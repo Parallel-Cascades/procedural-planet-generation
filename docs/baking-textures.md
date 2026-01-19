@@ -6,11 +6,13 @@ To balance performance and memory, we have included editor tools for baking proc
 
 ## Material context menu item
 
-You can bake the procedural planet's color map or its heightmap, which is used to generate normals. To access the procedural texture baking is by right clicking on the material's inpector window and choosing 'Parallel Cascades > Bake Procedural Material to Cubemap Texture' or 'Parallel Cascades > Bake Procedural Material Heightmap to Cubemap Texture:
+Procedural texture baking is accesed through a context menu by right clicking on the *material's* inpector window:
 
 ![Bake Texture Context Menu](./assets/images/texture-baking/context-menu.png)
 
-Selecting this will open the 'Bake Texture from Material' wizard:
+You can bake and apply all textures - color, heightmap, smoothness and emission, automatically determined by the body selected. Earth-like have all 4 whereas gas giants only have color and smoothness. Or you can bake maps individually.
+
+Selecting any option will open the 'Bake Texture from Material' wizard:
 
 ![Bake Texture Wizard](./assets/images/texture-baking/bake-texture-wizard.png)
 
@@ -19,6 +21,8 @@ If you tick the `Assign Texture To Material` checkbox, the static texture will b
 ![Cubemap Properties](./assets/images/texture-baking/shader-properties-cubemap.png)
 
 ![Render Mode Property](./assets/images/texture-baking/render-mode-property.png)
+
+Choosing Bake and Apply All Textures also does this automatically.
 
 ## Flowmaps
 
