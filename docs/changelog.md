@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Quick Fixes
 
 ### Fixed
-- Earth-like shadergraph was corrupted: ArgumentException: An item with the same key has already been _added. Key: UnityEditor.Graphing.Edge_
+- Earth-like shadergraph was corrupted: ArgumentException: An item with the same key has already been added. Key: UnityEditor.Graphing.Edge
 - Runtime procedural generation scene now correctly generates new variants for both gas giant and asteroid ring.
 - Removed unused ProceduralSphericalWhorls.hlsl file. Subgraph is used instead.
 
