@@ -1,5 +1,5 @@
 site_name: Procedural Planet Generation
-site_url: https://parallelcascades.com/procedural-planet-generation
+site_url: https://parallelcascades.com/procedural-planet-generation/
 
 nav:
   - Home: index.md
@@ -46,6 +46,9 @@ extra:
       link: https://github.com/parallel-cascades
     - icon: fontawesome/solid/mug-hot
       link: https://ko-fi.com/parallelcascades
+    
+  version:
+    provider: mike
 
   analytics:
     provider: google
