@@ -11,3 +11,11 @@ This is in fact a repeated face. This might happen if any changes have been made
 ![Cubemap Face Bug](./assets/images/known-issues/cubemap-face-bug.png)
 
 This only affects the preview image and will not carry over to the final rendered image and can be ignored.
+
+## 3. VFX Skybox breaks when using Orthographic projection
+
+![VFX Skybox orthographic](./assets/images/known-issues/vfx-skybox-orthographic.png)
+
+The VFX skybox uses a custom function to determine where to place the star particles based on perspective camera distance. If you switch to orthographic camera the star particles will apear huge and flicker across the screen as you move the camera.
+
+A more advanced procedural skybox solution is coming soon.

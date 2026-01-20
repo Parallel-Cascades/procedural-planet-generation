@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.1] - 2026-01-20
+Minor fixes
+
+### Added
+- New clouds procedural feature for Earth-like planets generation.
+- Updated pdf documentation.
+
+### Fixed
+- Gas Giant Ring Menu item wasn't adding material and renderer.
+- Default sizes for gas giant rings adjusted for new shader.
+
 ## [1.1.0] - 2026-01-19
 New Gas Giants and Asteroid Rings, Custom lighting improvements, Orthographic camera support
 
