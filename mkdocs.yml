@@ -83,12 +83,4 @@ markdown_extensions:
   - md_in_html
   - pymdownx.blocks.caption
   - footnotes
-
-plugins:
-  - to-pdf:
-      enabled_if_env: ENABLE_PDF_EXPORT
-      cover_title: Procedural Planet Generation
-      author: Parallel Cascades
-      cover_subtitle: Documentation
-      copyright: Copyright © 2025
    

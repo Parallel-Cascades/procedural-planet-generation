@@ -15,8 +15,6 @@ The Lite version includes:
 
 The full [paid version](#when-to-upgrade) adds heightmap-based normals, dynamic clouds, city lights, storm systems, VFX corona particles, static texture baking tools, custom omnidirectional lighting, and additional shader variants.
 
----
-
 ## Celestial Bodies (Lite)
 
 ### Moons
@@ -38,8 +36,6 @@ Procedural surface coloration with randomizable gradient.
 | ------------------------ | --------------------------------------------------------------------------- |
 | **Procedural Heightmaps** | Realistic surface elevation with depth                                     |
 | **Normal Generation**    | Crater and ridge details visible at close range                            |
-
----
 
 ### Earth-like Planets
 
@@ -68,7 +64,6 @@ Atmospheric glow post-processing effect. Shader fresnel glow at planet edges.
 | **Dynamic Clouds**         | Procedurally animated cloud layers with proper lighting                   |
 | **City Lights**            | Illuminated cities visible on the dark side of the planet                 |
 
----
 
 ### Gas Giants and Asteroid Rings
 
@@ -99,7 +94,6 @@ Atmospheric effects with Fresnel edge glow and post-processing glow.
 A new simplified version of the Gas Giant has been added that has reduced visual fidelity but much improved performance. Find it under the new menu item `Parallel Cascades/Procedural Planet Generation Lite/Gas Giant (Simplified)`. This is benchmarked to have double the performance of the default Gas Giant shader. 
 
 ![Gas Giant Simple](./assets/images/lite-samples/gas-giant-simple.png)
----
 
 Asteroid rings are procedurally generated spherically banded discs that rotate around a planet. Lighting overrides allow you to control visibility at acute viewing angles.
 
@@ -117,8 +111,6 @@ Asteroid rings are procedurally generated spherically banded discs that rotate a
 | Feature                        | Description                                                            |
 | ------------------------------ | ---------------------------------------------------------------------- |
 | **Advanced Ring Transparency** | Improved alpha variations among asteroid ring bands           |
-
----
 
 ### Stars
 
@@ -140,8 +132,6 @@ Stars are always lit with a flowing, molten surface with HDR color variation and
 | --------------------------- | ----------------------------------------------------------------------- |
 | **VFX-Based Corona Particles** | Stunning volumetric particle effects around the star                 |
 | **Static Baking and Flowmap mode** | Capture unique procedural patterns in textures and perturb them to simulate dynamic movement with high performance         |
-
----
 
 ## When to Upgrade
 

@@ -1,0 +1,30 @@
+site_name: Procedural Planet Generation
+site_url: https://parallelcascades.com/procedural-planet-generation/
+
+nav:
+  - Home: index.md
+  - Get Started: get-started.md
+  - Baking Textures from Procedural Materials: baking-textures.md
+  - Gas Giant Rings: gas-giant-rings.md
+  - VFX Skybox: vfx-skybox.md
+  - Post Processing Glow: post-processing-glow.md
+  - Custom Space Lighting: custom-space-lighting.md
+  - Camera Antialiasing: antialiasing.md
+  - Shader Filtering: filtering.md
+  - Orthographic Camera: orthographic-camera.md
+  - System Requirements and Performance Optimisation: system-requirements-and-performance-optimisation.md
+  - Known Issues: known-issues.md
+  - Tutorials: tutorials.md
+  - Changelog: changelog.md
+
+theme:
+  name: material
+  logo: assets/logo.png
+
+plugins:
+  - to-pdf:
+      enabled_if_env: ENABLE_PDF_EXPORT
+      cover_title: Procedural Planet Generation
+      author: Parallel Cascades
+      cover_subtitle: Documentation
+      copyright: Copyright © 2026
