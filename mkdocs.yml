@@ -4,18 +4,25 @@ site_url: https://parallelcascades.com/procedural-planet-generation/
 nav:
   - Home: index.md
   - Get Started: get-started.md
-  - Baking Textures from Procedural Materials: baking-textures.md
-  - Gas Giant Rings: gas-giant-rings.md
-  - VFX Skybox: vfx-skybox.md
-  - Post Processing Glow: post-processing-glow.md
-  - Custom Space Lighting: custom-space-lighting.md
-  - Camera Antialiasing: antialiasing.md
-  - Shader Filtering: filtering.md
-  - Orthographic Camera: orthographic-camera.md
-  - System Requirements and Performance Optimisation: system-requirements-and-performance-optimisation.md
-  - Known Issues: known-issues.md
+  - Setup:
+    - Post Processing Glow: post-processing-glow.md
+    - Custom Space Lighting: custom-space-lighting.md
+    - Camera Antialiasing: antialiasing.md
+    - Shader Filtering: filtering.md
+    - Orthographic Camera: orthographic-camera.md
+    - VFX Skybox: vfx-skybox.md
+  - Texture Baking:
+    - Baking Textures from Procedural Materials: baking-textures.md
+  - Gas Giants:
+    - gas-giants/index.md
+    - Curl Gas Giant Simulations: gas-giants/curl-gas-giant-simulation.md
+    - Gas Giant Rings: gas-giants/gas-giant-rings.md
+    - Custom Lighting: gas-giants/custom-lighting.md
+    - Gas Giant Legacy Shaders: gas-giants/gas-giant-legacy-shaders.md
   - Lite Samples Pack: lite-samples-pack.md
+  - System Requirements: system-requirements-and-performance-optimisation.md
   - Tutorials: tutorials.md
+  - Known Issues: known-issues.md
   - Changelog: changelog.md
 
 theme:
@@ -36,7 +43,10 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
   features:
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.footer
+    - navigation.indexes
 
 extra:
   social:
