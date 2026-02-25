@@ -1039,6 +1039,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#quick-start" class="md-nav__link">
     <span class="md-ellipsis">
       Quick Start
@@ -1073,12 +1082,30 @@
 
 
 <h1 id="gas-giants">Gas Giants</h1>
-<p>The best-looking technique for gas giants uses Custom Render Textures and a special shader graph for a flow simulation.
-You can read more about it in the <a href="curl-gas-giants-simulation.md">Curl Gas Giants documentation page</a>.
-Simpler, legacy shaders that directly generate the gas giant patterns are also available at: <a href="gas-giant-shaders.md">Gas Giant Legacy Shaders</a>.
-Gas giant rings are covered here: <a href="gas-giant-rings/">Gas Giant Rings</a>.</p>
-<p>This asset requires Unity's Editor Coroutines Package in order to simulate curl simulations for the gas giants in Edit mode:
-https://docs.unity3d.com/Packages/com.unity.editorcoroutines@1.0/manual/index.html
+<h2 id="overview">Overview</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="curl-gas-giant-simulation/"><strong>Curl Gas Giants</strong></a></td>
+<td>Advanced gas giant rendering using Custom Render Textures with fluid flow simulation. This technique produces the most realistic and dynamic gas giant effects with animated cloud patterns.</td>
+</tr>
+<tr>
+<td><a href="gas-giant-rings/"><strong>Gas Giant Rings</strong></a></td>
+<td>Procedural ring systems for gas giants with customizable radius, lighting, and advanced two-sided lighting effects. Can be layered for varied visual complexity.</td>
+</tr>
+<tr>
+<td><a href="gas-giant-legacy-shaders/"><strong>Gas Giant Legacy Shaders</strong></a></td>
+<td>Simpler procedural shaders that directly generate gas giant patterns without simulation. These are fully procedural with custom lighting, smoothness, and normals - ideal for performance-sensitive scenarios.</td>
+</tr>
+</tbody>
+</table>
+<p>This asset requires Unity's <a href="https://docs.unity3d.com/Packages/com.unity.editorcoroutines@1.0/manual/index.html">Editor Coroutines Package</a> in order to simulate curl simulations for the gas giants in Edit mode:
 If you haven't installed this package when importing this asset, you can do so through the Package Manager.</p>
 <h2 id="quick-start">Quick Start</h2>
 <p>To add procedural gas giants to your scenes, right click inside your scene hierarchy to open the context menu and
@@ -1088,12 +1115,12 @@ This will then ask you for a folder to save your gas giant materials and resourc
 setup everything required for your gas giant simulation. </p>
 <h2 id="sample-scenes-found-under-parallel-cascades-gas-giants-samples">Sample Scenes - Found under "Parallel Cascades &gt; Gas Giants &gt; Samples"</h2>
 <ul>
-<li>The Gas Giants with Flow Simulation scene demonstrates 4 pre-generated gas giants using custom render textures with flow simulation.</li>
-<li>The Custom Lighting sample scene demonstrates a basic solar system with a central star as the omnidirectional light. This
+<li>The <code>Gas Giants with Flow Simulation</code> scene demonstrates 4 pre-generated gas giants using custom render textures with flow simulation.</li>
+<li>The <code>Custom Lighting</code> sample scene demonstrates a basic solar system with a central star as the omnidirectional light. This
   uses a baked texture shader for the central star but shows custom lighting for the 4 gas giants in the scene. The DistanceToCameraForSimulation
   property of the ProceduralGasGiantFlowSimulation component on each gas giant is used to limit the flow simulation to only run when the gas giant is within a certain distance of the camera, improving performance.
   This allows for 4 gas giants to be on the screen simultaneously but only simulate flow when look at up-close.</li>
-<li>The Legacy Shader sample scene demonstrates older more rudimentary gas giant shaders that use noise masks and uv distortion
+<li>The <code>Legacy Shaders</code> sample scene demonstrates older more rudimentary gas giant shaders that use noise masks and uv distortion
   instead of curl and custom render texture fluid simulation.</li>
 </ul>
 
