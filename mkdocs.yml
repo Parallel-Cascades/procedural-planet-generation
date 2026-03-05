@@ -19,6 +19,8 @@ nav:
     - Gas Giant Rings: gas-giants/gas-giant-rings.md
     - Custom Lighting: gas-giants/custom-lighting.md
     - Gas Giant Legacy Shaders: gas-giants/gas-giant-legacy-shaders.md
+  - Asteroid Belts:
+    - asteroid-belts/index.md
   - Lite Samples Pack: lite-samples-pack.md
   - System Requirements: system-requirements-and-performance-optimisation.md
   - Tutorials: tutorials.md
