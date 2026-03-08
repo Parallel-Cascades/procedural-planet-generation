@@ -21,6 +21,8 @@ nav:
     - Gas Giant Legacy Shaders: gas-giants/gas-giant-legacy-shaders.md
   - Asteroid Belts:
     - asteroid-belts/index.md
+    - Asteroid Shader: asteroid-belts/asteroid-shader.md
+    - Asteroid Belt Component: asteroid-belts/asteroid-belt-component.md
   - Lite Samples Pack: lite-samples-pack.md
   - System Requirements: system-requirements-and-performance-optimisation.md
   - Tutorials: tutorials.md
