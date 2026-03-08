@@ -14,7 +14,7 @@
         <link rel="prev" href="../gas-giants/gas-giant-legacy-shaders/">
       
       
-        <link rel="next" href="../lite-samples-pack/">
+        <link rel="next" href="asteroid-shader/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -937,6 +937,10 @@
           
         
       
+        
+      
+        
+      
     
     
       
@@ -966,6 +970,11 @@
 
             </a>
             
+              
+              <label class="md-nav__link md-nav__link--active" for="__nav_6" id="__nav_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
           </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
@@ -975,6 +984,50 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="asteroid-shader/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Asteroid Shader
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="asteroid-belt-component/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Asteroid Belt Component
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
           </ul>
@@ -1109,6 +1162,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Start
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1124,16 +1203,37 @@
 
 
 <h1 id="asteroid-belts">Asteroid Belts</h1>
+<h2 id="overview">Overview</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="asteroid-shader/"><strong>Asteroid Shader</strong></a></td>
+<td>Shader Graph with vertex displacement for procedural shape and moon surface procedural normals for rocky appearance. Per-instance unique ID generation to produce unique asteroid shapes within an asteroid belt.</td>
+</tr>
+<tr>
+<td><a href="asteroid-belt-component/"><strong>Asteroid Belt Component</strong></a></td>
+<td>Belt procedural generation - belt torus shape settings, asteroid color palettes and random generation. Handles edit mode and  runtime rendering through instancing. Performance optimization via mesh LOD system, frustum culling.</td>
+</tr>
+</tbody>
+</table>
+<p>Asteroid belts use a custom procedural shader with vertex displacement instancing to render 1000s of instances dynamically
+at runtime with good performance.</p>
 <p><img alt="Asteroid Belt Editor" src="../assets/images/asteroid-belts/editor-asteroid-belt.png" /></p>
-<p>Asteroid belts use a custom procedural shader with vertex displacement instancing to render 1000s of instances without
-affecting performance. They can be created with the "Parallel Cascades &gt; Create Asteroid Belt" menu item.</p>
-<p>To edit the appearance of asteroids, you can adjust the asteroid material which is embedded in the Asteroid Belt inspector:</p>
-<p><img alt="asteroid-material-inspector.png" src="../assets/images/asteroid-belts/asteroid-material-inspector.png" /></p>
-<p>To adjust the whole asteroid belt appearance and andimation - inner and outer radius, instance count and size ranges,
-adjust the Asteroid Belt component's fields:</p>
+<h2 id="quick-start">Quick Start</h2>
+<p>To add a new asteroid belt to your scene, use the custom menu item to automatically set up the asteroid belt with
+material, scripts and LOD meshes. Right click inside your scene hierarchy to open the context menu and
+select "Parallel Cascades &gt; Asteroid Belt".</p>
 <p><img alt="asteroid-belt-orbit-inspector.png" src="../assets/images/asteroid-belts/asteroid-belt-orbit-inspector.png" /></p>
-<p>A custom LOD system ensures you are only using a high-resolution mesh when viewing asteroids from up close. This
-uses icosphere meshes by default, but you can use your own meshes here.</p>
+<p>This will create a game object in your scene with the Asteroid Belt component. Here you can adjust the whole asteroid belt appearance and animation - 
+inner and outer radius, instance count and size ranges, animation speeds (orbit/rotation). </p>
+<p>To edit the appearance of asteroids - colors, surface normals, craters, displacement strength, you can adjust the asteroid material which is embedded in the Asteroid Belt inspector:</p>
+<p><img alt="asteroid-material-inspector.png" src="../assets/images/asteroid-belts/asteroid-material-inspector.png" /></p>
 
 
 
@@ -1222,13 +1322,13 @@ uses icosphere meshes by default, but you can use your own meshes here.</p>
         
         
           
-          <a href="../lite-samples-pack/" class="md-footer__link md-footer__link--next" aria-label="Next: Lite Samples Pack">
+          <a href="asteroid-shader/" class="md-footer__link md-footer__link--next" aria-label="Next: Asteroid Shader">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Lite Samples Pack
+                Asteroid Shader
               </div>
             </div>
             <div class="md-footer__button md-icon">
