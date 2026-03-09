@@ -1150,27 +1150,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-flickering-with-high-detail-noise-patterns-when-viewed-from-a-distance" class="md-nav__link">
+  <a href="#1-missing-reference-to-asteroid-belt-material-in-asteroid-belts-sample-scene" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Flickering with high-detail noise patterns when viewed from a distance.
+      1. Missing reference to asteroid belt material in Asteroid Belts sample scene
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-cubemap-preview-during-baking-showing-a-seam-between-faces" class="md-nav__link">
+  <a href="#2-flickering-with-high-detail-noise-patterns-when-viewed-from-a-distance" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Cubemap Preview during baking showing a seam between faces
+      2. Flickering with high-detail noise patterns when viewed from a distance.
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-vfx-skybox-breaks-when-using-orthographic-projection" class="md-nav__link">
+  <a href="#3-cubemap-preview-during-baking-showing-a-seam-between-faces" class="md-nav__link">
     <span class="md-ellipsis">
-      3. VFX Skybox breaks when using Orthographic projection
+      3. Cubemap Preview during baking showing a seam between faces
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-vfx-skybox-breaks-when-using-orthographic-projection" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. VFX Skybox breaks when using Orthographic projection
     </span>
   </a>
   
@@ -1232,27 +1241,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-flickering-with-high-detail-noise-patterns-when-viewed-from-a-distance" class="md-nav__link">
+  <a href="#1-missing-reference-to-asteroid-belt-material-in-asteroid-belts-sample-scene" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Flickering with high-detail noise patterns when viewed from a distance.
+      1. Missing reference to asteroid belt material in Asteroid Belts sample scene
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-cubemap-preview-during-baking-showing-a-seam-between-faces" class="md-nav__link">
+  <a href="#2-flickering-with-high-detail-noise-patterns-when-viewed-from-a-distance" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Cubemap Preview during baking showing a seam between faces
+      2. Flickering with high-detail noise patterns when viewed from a distance.
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-vfx-skybox-breaks-when-using-orthographic-projection" class="md-nav__link">
+  <a href="#3-cubemap-preview-during-baking-showing-a-seam-between-faces" class="md-nav__link">
     <span class="md-ellipsis">
-      3. VFX Skybox breaks when using Orthographic projection
+      3. Cubemap Preview during baking showing a seam between faces
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-vfx-skybox-breaks-when-using-orthographic-projection" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. VFX Skybox breaks when using Orthographic projection
     </span>
   </a>
   
@@ -1275,13 +1293,15 @@
 
 
 <h1 id="known-issues">Known Issues</h1>
-<h2 id="1-flickering-with-high-detail-noise-patterns-when-viewed-from-a-distance">1. Flickering with high-detail noise patterns when viewed from a distance.</h2>
+<h2 id="1-missing-reference-to-asteroid-belt-material-in-asteroid-belts-sample-scene">1. Missing reference to asteroid belt material in Asteroid Belts sample scene</h2>
+<p>This has been resolved in version 1.3.1 which is pending release on the asset store.</p>
+<h2 id="2-flickering-with-high-detail-noise-patterns-when-viewed-from-a-distance">2. Flickering with high-detail noise patterns when viewed from a distance.</h2>
 <p>See <a href="../antialiasing/">Anti-Aliasing</a> and <a href="../filtering/">Filtering</a>. <a href="../baking-textures/">Baked</a> textures do not have this issue.</p>
-<h2 id="2-cubemap-preview-during-baking-showing-a-seam-between-faces">2. Cubemap Preview during baking showing a seam between faces</h2>
+<h2 id="3-cubemap-preview-during-baking-showing-a-seam-between-faces">3. Cubemap Preview during baking showing a seam between faces</h2>
 <p>This is in fact a repeated face. This might happen if any changes have been made to the shader just prior to baking:</p>
 <p><img alt="Cubemap Face Bug" src="../assets/images/known-issues/cubemap-face-bug.png" /></p>
 <p>This only affects the preview image and will not carry over to the final rendered image and can be ignored.</p>
-<h2 id="3-vfx-skybox-breaks-when-using-orthographic-projection">3. VFX Skybox breaks when using Orthographic projection</h2>
+<h2 id="4-vfx-skybox-breaks-when-using-orthographic-projection">4. VFX Skybox breaks when using Orthographic projection</h2>
 <p><img alt="VFX Skybox orthographic" src="../assets/images/known-issues/vfx-skybox-orthographic.png" /></p>
 <p>The VFX skybox uses a custom function to determine where to place the star particles based on perspective camera distance. If you switch to orthographic camera the star particles will apear huge and flicker across the screen as you move the camera.</p>
 <p>A more advanced procedural skybox solution is coming soon.</p>
