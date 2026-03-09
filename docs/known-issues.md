@@ -1,14 +1,23 @@
 # Known Issues
 
-## 1. Missing reference to asteroid belt material in Asteroid Belts sample scene
+## 1. Poor editor performance when using multiple flow simulation gas giants in the same scene
+
+Particularly pronounced when using editor systems that constantly update, like the Shader Graph view. Flow
+simulation gas giants constantly update in the editor in order to retain the custom render texture
+state when scenes are saved - this is a temporary workaround and will be fixed in update 1.3.2.
+
+Meanwhile, if you need to alleviate the issue, you can disable the `ProceduralGasGiantFlowSimulation` component
+in the inspector while working on shaders.
+
+## 2. Missing reference to asteroid belt material in Asteroid Belts sample scene
 
 This has been resolved in version 1.3.1 which is pending release on the asset store.
 
-## 2. Flickering with high-detail noise patterns when viewed from a distance.
+## 3. Flickering with high-detail noise patterns when viewed from a distance.
 
 See [Anti-Aliasing](./antialiasing.md) and [Filtering](./filtering.md). [Baked](./baking-textures.md) textures do not have this issue.
 
-## 3. Cubemap Preview during baking showing a seam between faces
+## 4. Cubemap Preview during baking showing a seam between faces
 
 This is in fact a repeated face. This might happen if any changes have been made to the shader just prior to baking:
 
@@ -16,7 +25,7 @@ This is in fact a repeated face. This might happen if any changes have been made
 
 This only affects the preview image and will not carry over to the final rendered image and can be ignored.
 
-## 4. VFX Skybox breaks when using Orthographic projection
+## 5. VFX Skybox breaks when using Orthographic projection
 
 ![VFX Skybox orthographic](./assets/images/known-issues/vfx-skybox-orthographic.png)
 
