@@ -32,3 +32,20 @@ This only affects the preview image and will not carry over to the final rendere
 The VFX skybox uses a custom function to determine where to place the star particles based on perspective camera distance. If you switch to orthographic camera the star particles will apear huge and flicker across the screen as you move the camera.
 
 A more advanced procedural skybox solution is coming soon.
+
+## 6. 'No GUI Implemented' shown for some custom inspector features on procedural components
+
+![no-gui-implemented.png](assets/images/known-issues/no-gui-implemented.png)
+
+Check to see if you have any stray custom editor scripts that might be ovewriting the custom
+inspectors for the procedural components.
+This might also be caused by incompatibility with other assets that extend the editor.
+
+This will in fact lead to more issues, like gradients not being saved to textures permanently.
+
+### Known incompatible assets:
+
+#### SOAP - Scriptable Object Architecture Pattern:
+There is actually a script you can delete from this asset to restore editor functionality:
+
+Assets/Obvious/Soap/Core/Editor/ScriptableBase/ObjectEditor.cs
