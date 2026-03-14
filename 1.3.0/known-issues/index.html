@@ -1194,6 +1194,45 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#6-no-gui-implemented-shown-for-some-custom-inspector-features-on-procedural-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 'No GUI Implemented' shown for some custom inspector features on procedural components
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. &#39;No GUI Implemented&#39; shown for some custom inspector features on procedural components">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#known-incompatible-assets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Known incompatible assets:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Known incompatible assets:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#soap-scriptable-object-architecture-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      SOAP - Scriptable Object Architecture Pattern:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1294,6 +1333,45 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#6-no-gui-implemented-shown-for-some-custom-inspector-features-on-procedural-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 'No GUI Implemented' shown for some custom inspector features on procedural components
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. &#39;No GUI Implemented&#39; shown for some custom inspector features on procedural components">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#known-incompatible-assets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Known incompatible assets:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Known incompatible assets:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#soap-scriptable-object-architecture-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      SOAP - Scriptable Object Architecture Pattern:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1329,6 +1407,16 @@ in the inspector while working on shaders.</p>
 <p><img alt="VFX Skybox orthographic" src="../assets/images/known-issues/vfx-skybox-orthographic.png" /></p>
 <p>The VFX skybox uses a custom function to determine where to place the star particles based on perspective camera distance. If you switch to orthographic camera the star particles will apear huge and flicker across the screen as you move the camera.</p>
 <p>A more advanced procedural skybox solution is coming soon.</p>
+<h2 id="6-no-gui-implemented-shown-for-some-custom-inspector-features-on-procedural-components">6. 'No GUI Implemented' shown for some custom inspector features on procedural components</h2>
+<p><img alt="no-gui-implemented.png" src="../assets/images/known-issues/no-gui-implemented.png" /></p>
+<p>Check to see if you have any stray custom editor scripts that might be ovewriting the custom
+inspectors for the procedural components.
+This might also be caused by incompatibility with other assets that extend the editor.</p>
+<p>This will in fact lead to more issues, like gradients not being saved to textures permanently.</p>
+<h3 id="known-incompatible-assets">Known incompatible assets:</h3>
+<h4 id="soap-scriptable-object-architecture-pattern">SOAP - Scriptable Object Architecture Pattern:</h4>
+<p>There is actually a script you can delete from this asset to restore editor functionality:</p>
+<p>Assets/Obvious/Soap/Core/Editor/ScriptableBase/ObjectEditor.cs</p>
 
 
 
