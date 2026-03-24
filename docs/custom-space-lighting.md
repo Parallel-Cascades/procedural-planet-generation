@@ -27,6 +27,12 @@ For ease of use we have the Planet Shaders Global Settings script that manages a
 
 Toggling Omnidirectional Space Lighting from here will affect all celestial bodies in the scene.
 
+You can manually trigger the custom shader lighting for all shaders with 'Tools/Parallel Cascades/Planet Generation/Reset Custom Space Lighting' menu item.
+
+## Ambient Lighting
+
+To control how dark the unlit side of planets is, adjust the Ambient Occlusion shader property on procedural planet shaders.
+
 ## Custom Shadows
 
 In order to have realtime planet shadow with our custom space lighitng, we use an analytical shadow calculation - for now this only works for spherical planets. It allows us to have gas giant shadows on their rings, or have a moon shadow a planet and vice versa.

@@ -5,6 +5,40 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.0] - 2026-03-24
+Custom lighting improvements, bugfixes and new terrestrial planets
+
+### Added
+- Martian planet shader
+- Toggle for asteroid instancing shader to allow use outside of belts
+- Two new menu items for the above planet types
+- Ambient lighting for custom lighting shaders
+- Inline material inspector to Planet Glow and Corona Glow
+- Shadow Receiver Group Id property for Gas Giant from Cubemap shader
+- Manual menu items for setting camera orthographic mode and shader custom lighting mode under Tools/Parallel Cascades/Planet Generation
+
+### Fixed
+- Flow Simulation Gas Giant menu items weren't adding the planet glow component
+
+## [1.3.2] - 2026-03-10
+Editor performance improvement for flow simulation gas giants
+
+### Fixed
+- Poor editor performance with multiple flow simulation gas giants. Custom render texture initialization workaround used to re-run every frame in Edit mode, now runs only once.
+
+### Changed
+- Gas Giant cubemap initialization workaround reworked to avoid unnecessary reinitialization every frame in Edit mode.
+
+## [1.3.1] - 2026-03-06
+Minor fixes
+
+### Added
+- Orbit speed and rotation speed adjustment at runtime for Asteroid Belts
+
+### Fixed
+- Missing material reference from Asteroid Belts sample scene
+- False warning when creating new asteroid belt for No LOD tiers defined resolved.
+
 ## [1.3.0] - 2026-03-05
 Asteroid belts
 

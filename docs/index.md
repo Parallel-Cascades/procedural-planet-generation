@@ -51,6 +51,10 @@ Fresnel edge effect and post-processing glow for atmospheric effects.
 | **Clouds**   | Size, density, normals, color, wave-like animation frequency and amplitude            |
 | **City lights**   | Density for coastal vs inner cities, color, light power            |
 
+## Additional Planets added in 1.4.0: Asteroid Moons and Mars-likes
+
+Combining features of moons and Earth-likes, as well as the displacement used for [Asteroid](./asteroid-belts/asteroid-shader.md) Belts.
+
 ## Gas Giants and Asteroid Rings
 
 ![Gas Giant with Ring](./assets/images/gas-giant-with-ring.png)
